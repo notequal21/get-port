@@ -1217,20 +1217,17 @@ h6 {
 .notfound-body__link {
   margin: 20px 0 0 0;
   font-family: 'Montserrat';
-  font-weight: 600;
+  font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
   letter-spacing: -0.01em;
   color: var(--white);
   text-shadow: 8px 8px 5px rgba(0, 0, 0, 0.45);
-  -webkit-transition: opacity .3s ease;
-  -o-transition: opacity .3s ease;
-  transition: opacity .3s ease;
 }
 
 .notfound-body__link:hover {
-  opacity: .8;
+  font-weight: 600;
 }
 
 .contactus {
@@ -1457,12 +1454,6 @@ body {
 
 body.lock {
   overflow: hidden;
-}
-
-body.lock .container {
-  -webkit-transform: translate(-8.5px, 0);
-      -ms-transform: translate(-8.5px, 0);
-          transform: translate(-8.5px, 0);
 }
 
 .container {
@@ -1899,12 +1890,6 @@ body.lock .container {
 
   .contacts-body__col_map {
     margin: 40px 0 0 0;
-  }
-
-  body.lock .container {
-    -webkit-transform: translate(0);
-        -ms-transform: translate(0);
-            transform: translate(0);
   }
 }
 
