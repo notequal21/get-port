@@ -39,17 +39,21 @@ if (document.querySelector('.modal-open-btn')) {
     if (modal.classList.contains('active')) {
       modal.classList.remove('active')
       body.classList.remove('lock')
-      content.forEach((item) => {
-        item.style.maxWidth = `1320px`
-        item.style.padding = ` 0 20px`
-      })
+      if (window.innerWidth > 992) {
+        content.forEach((item) => {
+          item.style.maxWidth = `1320px`
+          item.style.padding = ` 0 20px`
+        })
+      }
     } else {
       modal.classList.add('active')
       body.classList.add('lock')
-      content.forEach((item) => {
-        item.style.maxWidth = `${1320 + scrollWidth}px`
-        item.style.padding = ` 0 ${scrollWidth + 20}px 0 20px`
-      })
+      if (window.innerWidth > 992) {
+        content.forEach((item) => {
+          item.style.maxWidth = `${1320 + scrollWidth}px`
+          item.style.padding = ` 0 ${scrollWidth + 20}px 0 20px`
+        })
+      }
     }
   }
 
