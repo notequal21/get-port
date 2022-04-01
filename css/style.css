@@ -1287,6 +1287,18 @@ h6 {
   z-index: 1;
 }
 
+.contactus-body__shadow {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: calc(100% + 200px);
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
 .contactus-body::before {
   content: '';
   display: block;
@@ -1296,8 +1308,6 @@ h6 {
   left: 0;
   position: absolute;
   background: rgba(234, 234, 234, 0.5);
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
   border-radius: 15px 15px 0 0;
@@ -1312,8 +1322,6 @@ h6 {
   left: 0;
   position: absolute;
   background: rgba(234, 234, 234, 0.5);
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
   border-radius: 0 0 15px 15px;
@@ -2118,6 +2126,10 @@ body.lock {
     padding: 0;
     background: transparent;
     min-height: auto;
+  }
+
+  .contactus-body__shadow {
+    display: none;
   }
 
   .contactus-body::before {
